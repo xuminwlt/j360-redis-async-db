@@ -1,5 +1,7 @@
 package me.j360.rad.action;
 
+import lombok.Getter;
+import lombok.Setter;
 import me.j360.rad.model.Action;
 import me.j360.rad.model.ActionTarget;
 import me.j360.rad.util.NamedThreadFactory;
@@ -20,8 +22,11 @@ import java.util.concurrent.atomic.AtomicBoolean;
  */
 public class ActionCenterDelegate implements ActionCenter{
 
+    @Setter
+    @Getter
     private ActionCenterFactory actionCenterFactory;
-
+    @Setter
+    @Getter
     private ActionCenter actionCenter;
 
     private ScheduledExecutorService executor;
