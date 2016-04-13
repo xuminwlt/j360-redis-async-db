@@ -1,5 +1,7 @@
 package me.j360.rad.core;
 
+import lombok.Getter;
+import lombok.Setter;
 import me.j360.rad.action.ActionCenter;
 import me.j360.rad.action.ActionCenterDelegate;
 import me.j360.rad.model.Action;
@@ -12,6 +14,8 @@ import me.j360.rad.model.Action;
  */
 public class ActionTemplate{
 
+    @Getter
+    @Setter
     private ActionCenterDelegate actionDelegate;
 
     public void call(Action action){

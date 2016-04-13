@@ -36,7 +36,7 @@ public class ActionCenterDelegate implements ActionCenter{
     private AtomicBoolean flushing = new AtomicBoolean(false);
 
     public ActionCenterDelegate(){
-        this.actionCenter = actionCenterFactory.getActionCenter();
+
     }
 
     //入口
