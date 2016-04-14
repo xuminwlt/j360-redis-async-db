@@ -3,6 +3,7 @@ package me.j360.rad.spring;
 import lombok.Getter;
 import lombok.Setter;
 import me.j360.rad.action.ActionCenter;
+import me.j360.rad.action.ActionCenterFactory;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.FactoryBean;
 import org.springframework.beans.factory.InitializingBean;

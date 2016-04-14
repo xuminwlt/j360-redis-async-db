@@ -6,15 +6,15 @@
 
        <bean id="actionConfig" class="me.j360.rad.action.ActionConfig"/>
        <bean id="actionCenterFactory" class="me.j360.rad.spring.ActionCenterFactoryBean">
-
+              <property name="actionCenter" ref="actionCenter"></property>
        </bean>
 
        <bean id="actionCenter" class="me.j360.rad.redis.RedisActionCenter">
        </bean>
 
        <bean id="actionCenterDelegate" class="me.j360.rad.action.ActionCenterDelegate">
-              <property name="actionCenterFactory" ref="actionCenterFactory"/>
-              <property name="actionCenter" ref="actionCenter"/>
+
+              <property name="actionCenter" ref="actionCenter"></property>
        </bean>
        <bean id="actionTemplate" class="me.j360.rad.core.ActionTemplate">
               <property name="actionDelegate" ref="actionCenterDelegate"/>

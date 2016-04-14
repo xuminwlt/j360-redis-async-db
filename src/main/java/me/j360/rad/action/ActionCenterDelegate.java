@@ -24,9 +24,6 @@ public class ActionCenterDelegate implements ActionCenter{
 
     @Setter
     @Getter
-    private ActionCenterFactory actionCenterFactory;
-    @Setter
-    @Getter
     private ActionCenter actionCenter;
 
     private ScheduledExecutorService executor;
